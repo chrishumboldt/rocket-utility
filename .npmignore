@@ -1,0 +1,7 @@
+# Folders to ignore
+node_modules
+src
+
+# Files to ignore
+publish.js
+tsconfig.json
