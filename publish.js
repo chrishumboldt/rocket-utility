@@ -5,7 +5,7 @@
 const { spawn } = require('child_process');
 
 // Set the input arguments.
-const package = 'utility'; 
+const package = 'Rocket Utility'; 
 const version = process.argv[2] ? process.argv[2].split('=')[1] : 'patch';
 
 const commands = [
