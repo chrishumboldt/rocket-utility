@@ -3,5 +3,7 @@ node_modules
 src
 
 # Files to ignore
+.gitattributes
+jasmine.json
 publish.js
 tsconfig.json
