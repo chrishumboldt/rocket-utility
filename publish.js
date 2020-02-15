@@ -14,7 +14,7 @@ const commands = [
   `git commit -m "Publishing ${version} version."`,
   `npm version ${version}`,
   `npm run build`,
-  `npm publish --access restricted`
+  `npm publish --access public`
 ];
 
 // Run the commands
