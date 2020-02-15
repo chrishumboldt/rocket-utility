@@ -1,6 +1,6 @@
 {
   "name": "@chrishumboldt/rocket-utility",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A pure functions utility library and store.",
   "main": "./dist/index.js",
   "devDependencies": {
