@@ -1,5 +1,5 @@
 {
-  "name": "rocket-utility",
+  "name": "@chrishumboldt/rocket-utility",
   "version": "0.1.0",
   "description": "A pure functions utility library and store.",
   "main": "./dist/index.js",
@@ -12,9 +12,9 @@
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rm -rf ./dist",
-    "equify:publish:major": "node publish.js version=major",
-    "equify:publish:minor": "node publish.js version=minor",
-    "equify:publish:patch": "node publish.js version=patch",
+    "rocket:publish:major": "node publish.js version=major",
+    "rocket:publish:minor": "node publish.js version=minor",
+    "rocket:publish:patch": "node publish.js version=patch",
     "test": "ts-node node_modules/jasmine/bin/jasmine --config=./jasmine.json"
   },
   "repository": {
