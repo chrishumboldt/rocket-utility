@@ -2,7 +2,6 @@
  * @author Chris Humboldt
  */
 
-import 'jasmine';
 import { RocketArray } from './array.utility';
 
 describe('Rocket Array Utility:', () => {
