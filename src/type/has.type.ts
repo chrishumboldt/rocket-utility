@@ -3,10 +3,10 @@
  */
 
 export interface HasClassOptions {
-   check: any;
-   has: string;
+  check: any;
+  has: string;
 }
 export interface HasExtensionOptions {
-   allowedTypes?: string[];
-   check: string;
+  allowedTypes?: string[];
+  check: string;
 }

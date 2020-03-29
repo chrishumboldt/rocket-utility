@@ -33,7 +33,7 @@ function getExtension(data: string): string {
  */
 function getIndex(node: any): number {
   // @ts-ignore
-  return (node) ? [].indexOf.call(node.parentNode.children, node) : -1;
+  return node ? [].indexOf.call(node.parentNode.children, node) : -1;
 }
 
 /**
@@ -50,9 +50,9 @@ function getSelectorType(selector: string | undefined): SelectorType {
   } else if (selector === 'window') {
     return SelectorType.WINDOW;
   } else if (
-    selector.indexOf('.') > -1
-    || RocketHas.spaces(selector)
-    || RocketRegExTest({ check: selector, regEx: RegEx.ATTRIBUTE })
+    selector.indexOf('.') > -1 ||
+    RocketHas.spaces(selector) ||
+    RocketRegExTest({ check: selector, regEx: RegEx.ATTRIBUTE })
   ) {
     // The selector is of type query selector all.
     return SelectorType.QUERY_SELECTOR_ALL;

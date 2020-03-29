@@ -3,6 +3,6 @@
  */
 
 export interface RegExTestOptions {
-   check: string;
-   regEx: RegExp;
+  check: string;
+  regEx: RegExp;
 }

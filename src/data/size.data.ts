@@ -3,8 +3,8 @@
  */
 
 export enum SizeType {
-   NONE = 'none',
-   SMALL = 'small',
-   MEDIUM = 'medium',
-   LARGE = 'large'
+  NONE = 'none',
+  SMALL = 'small',
+  MEDIUM = 'medium',
+  LARGE = 'large'
 }

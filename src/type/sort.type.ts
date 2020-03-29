@@ -5,16 +5,16 @@
 import { SortOrder } from '../data/sort.data';
 
 export interface CompareObjectValueOptions {
-   by: string;
-   order?: SortOrder;
+  by: string;
+  order?: SortOrder;
 }
 export interface SortArrayOptions {
-   data: any[];
-   by?: string;
-   order?: SortOrder;
+  data: any[];
+  by?: string;
+  order?: SortOrder;
 }
 export interface SortMapOptions {
-   by?: string;
-   data: Map<any, any>;
-   order?: SortOrder;
+  by?: string;
+  data: Map<any, any>;
+  order?: SortOrder;
 }

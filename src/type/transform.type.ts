@@ -3,9 +3,9 @@
  */
 
 export interface TransformBytesOptions {
-   bytes: number;
-   decimals?: number;
-};
+  bytes: number;
+  decimals?: number;
+}
 
 export interface TransformEnumOptions {
   data: any;

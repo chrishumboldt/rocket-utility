@@ -10,12 +10,12 @@ import { RocketIs } from '../is/is.utility';
  * @param days - The hours to convert.
  */
 function convertDaysToMilliseconds(days: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(days)) {
-      return;
-   }
+  // Catch.
+  if (!RocketIs.number(days)) {
+    return;
+  }
 
-   return days * 24 * 60 * 60 * 1000;
+  return days * 24 * 60 * 60 * 1000;
 }
 
 /**
@@ -24,12 +24,12 @@ function convertDaysToMilliseconds(days: number): number | undefined {
  * @param hours - The hours to convert.
  */
 function convertHoursToMilliseconds(hours: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(hours)) {
-      return;
-   }
+  // Catch.
+  if (!RocketIs.number(hours)) {
+    return;
+  }
 
-   return hours * 60 * 60 * 1000;
+  return hours * 60 * 60 * 1000;
 }
 
 /**
@@ -38,12 +38,12 @@ function convertHoursToMilliseconds(hours: number): number | undefined {
  * @param milliseconds - The milliseconds to convert.
  */
 function convertMillisecondsToDays(milliseconds: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(milliseconds)) {
-      return;
-   }
+  // Catch.
+  if (!RocketIs.number(milliseconds)) {
+    return;
+  }
 
-   return convertMillisecondsToHours(milliseconds)! / 24;
+  return convertMillisecondsToHours(milliseconds)! / 24;
 }
 
 /**
@@ -52,12 +52,12 @@ function convertMillisecondsToDays(milliseconds: number): number | undefined {
  * @param milliseconds - The milliseconds to convert.
  */
 function convertMillisecondsToHours(milliseconds: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(milliseconds)) {
-      return;
-   }
+  // Catch.
+  if (!RocketIs.number(milliseconds)) {
+    return;
+  }
 
-   return convertMillisecondsToMinutes(milliseconds)! / 60;
+  return convertMillisecondsToMinutes(milliseconds)! / 60;
 }
 
 /**
@@ -65,13 +65,15 @@ function convertMillisecondsToHours(milliseconds: number): number | undefined {
  *
  * @param milliseconds - The milliseconds to convert.
  */
-function convertMillisecondsToMinutes(milliseconds: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(milliseconds)) {
-      return;
-   }
+function convertMillisecondsToMinutes(
+  milliseconds: number
+): number | undefined {
+  // Catch.
+  if (!RocketIs.number(milliseconds)) {
+    return;
+  }
 
-   return convertMillisecondsToSeconds(milliseconds)! / 60;
+  return convertMillisecondsToSeconds(milliseconds)! / 60;
 }
 
 /**
@@ -79,13 +81,15 @@ function convertMillisecondsToMinutes(milliseconds: number): number | undefined 
  *
  * @param milliseconds - The milliseconds to convert.
  */
-function convertMillisecondsToSeconds(milliseconds: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(milliseconds)) {
-      return;
-   }
+function convertMillisecondsToSeconds(
+  milliseconds: number
+): number | undefined {
+  // Catch.
+  if (!RocketIs.number(milliseconds)) {
+    return;
+  }
 
-   return milliseconds / 1000;
+  return milliseconds / 1000;
 }
 
 /**
@@ -94,12 +98,12 @@ function convertMillisecondsToSeconds(milliseconds: number): number | undefined 
  * @param milliseconds - The milliseconds to convert.
  */
 function convertMillisecondsToWeeks(milliseconds: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(milliseconds)) {
-      return;
-   }
+  // Catch.
+  if (!RocketIs.number(milliseconds)) {
+    return;
+  }
 
-   return convertMillisecondsToDays(milliseconds)! / 7;
+  return convertMillisecondsToDays(milliseconds)! / 7;
 }
 
 /**
@@ -108,12 +112,12 @@ function convertMillisecondsToWeeks(milliseconds: number): number | undefined {
  * @param minutes - The minutes to convert.
  */
 function convertMinutesToMilliseconds(minutes: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(minutes)) {
-      return;
-   }
+  // Catch.
+  if (!RocketIs.number(minutes)) {
+    return;
+  }
 
-   return minutes * 60 * 1000;
+  return minutes * 60 * 1000;
 }
 
 /**
@@ -122,12 +126,12 @@ function convertMinutesToMilliseconds(minutes: number): number | undefined {
  * @param seconds - The seconds to convert.
  */
 function convertSecondsToMilliseconds(seconds: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(seconds)) {
-      return;
-   }
+  // Catch.
+  if (!RocketIs.number(seconds)) {
+    return;
+  }
 
-   return seconds * 1000;
+  return seconds * 1000;
 }
 
 /**
@@ -136,11 +140,11 @@ function convertSecondsToMilliseconds(seconds: number): number | undefined {
  * @param json - The JSON to convert.
  */
 function convertToJSON(json: any): any {
-   if (RocketIs.json(json)) {
-      return json;
-   } else {
-      return JSON.parse(json);
-   }
+  if (RocketIs.json(json)) {
+    return json;
+  } else {
+    return JSON.parse(json);
+  }
 }
 
 /**
@@ -149,24 +153,24 @@ function convertToJSON(json: any): any {
  * @param hours - The hours to convert.
  */
 function convertWeeksToMilliseconds(weeks: number): number | undefined {
-   // Catch.
-   if (!RocketIs.number(weeks)) {
-      return;
-   }
+  // Catch.
+  if (!RocketIs.number(weeks)) {
+    return;
+  }
 
-   return weeks * 7 * 24 * 60 * 60 * 1000;
+  return weeks * 7 * 24 * 60 * 60 * 1000;
 }
 
 export const RocketConvert = {
-   daysToMilliseconds: convertDaysToMilliseconds,
-   hoursToMilliseconds: convertHoursToMilliseconds,
-   millisecondsToDays: convertMillisecondsToDays,
-   millisecondsToHours: convertMillisecondsToHours,
-   millisecondsToMinutes: convertMillisecondsToMinutes,
-   millisecondsToSeconds: convertMillisecondsToSeconds,
-   millisecondsToWeeks: convertMillisecondsToWeeks,
-   minutesToMilliseconds: convertMinutesToMilliseconds,
-   secondsToMilliseconds: convertSecondsToMilliseconds,
-   toJSON: convertToJSON,
-   weeksToMilliseconds: convertWeeksToMilliseconds
+  daysToMilliseconds: convertDaysToMilliseconds,
+  hoursToMilliseconds: convertHoursToMilliseconds,
+  millisecondsToDays: convertMillisecondsToDays,
+  millisecondsToHours: convertMillisecondsToHours,
+  millisecondsToMinutes: convertMillisecondsToMinutes,
+  millisecondsToSeconds: convertMillisecondsToSeconds,
+  millisecondsToWeeks: convertMillisecondsToWeeks,
+  minutesToMilliseconds: convertMinutesToMilliseconds,
+  secondsToMilliseconds: convertSecondsToMilliseconds,
+  toJSON: convertToJSON,
+  weeksToMilliseconds: convertWeeksToMilliseconds
 };

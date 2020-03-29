@@ -3,6 +3,6 @@
  */
 
 export interface CloneOptions {
-   data: any;
-   applyClass?: any;
+  data: any;
+  applyClass?: any;
 }

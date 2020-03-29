@@ -3,10 +3,10 @@
  */
 
 export interface RandomIntegerOptions {
-   max?: number;
-   min?: number;
+  max?: number;
+  min?: number;
 }
 export interface RandomStringOptions {
-   length?: number;
-   textOnly?: boolean;
+  length?: number;
+  textOnly?: boolean;
 }
